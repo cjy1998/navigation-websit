@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
 import { Client } from "@notionhq/client";
-export const dynamic = "force-dynamic";
+// export const dynamic = "force-dynamic";
 export async function GET() {
   try {
     // 从环境变量获取配置

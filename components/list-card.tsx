@@ -3,11 +3,9 @@ import {
   Card,
   CardContent,
   CardDescription,
-  CardFooter,
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import { IoArrowRedo } from "react-icons/io5";
 import Link from "next/link";
@@ -42,10 +40,6 @@ export function ListCard({ list }: { list: any }) {
       {list.remark.rich_text.length > 0 && (
         <CardContent>{list.remark.rich_text[0].plain_text}</CardContent>
       )}
-
-      {/* <CardFooter className="float-right">
-        <Button variant="link">{list.url.url}</Button>
-      </CardFooter> */}
     </Card>
   );
 }
